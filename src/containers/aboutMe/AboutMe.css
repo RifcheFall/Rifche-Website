@@ -1,0 +1,159 @@
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+
+.about-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.gretting-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+}
+
+.aboutMe-main {
+  display: flex;
+  /* align-items: center; */
+  gap: 100px;
+}
+
+.aboutMe-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.button-aboutMe-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.button-aboutMe-div > * {
+  margin-right: 0.5rem;
+}
+
+.aboutMe-text {
+  /* margin-top: 80px; */
+  font-size: 56px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+  margin-top: 0px;
+}
+
+.aboutMe-nickname {
+  font-size: 30px;
+  line-height: 0px;
+  font-family: "Google Sans Bold Italic";
+}
+
+.aboutMe-text-p {
+  font-size: 40px;
+  line-height: 40px;
+  margin-right: 40px;
+  text-align: center;
+  font-family: "Google Sans Medium";
+}
+
+.aboutMe-text-content {
+  font-size: 20px;
+  line-height: 40px;
+  margin-right: 40px;
+  font-family: "Google Sans Medium";
+  white-space: pre-line;
+}
+
+.aboutMe-image-div > * {
+  max-width: 100%;
+  /* width: 600px; */
+  /* height: auto; */
+  height: 60%;
+  border-radius: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-on-mobile {
+  display: none;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .aboutMe-text {
+    font-size: 50px;
+  }
+
+  .aboutMe-text-p {
+    font-size: 24px;
+  }
+
+  .aboutMe-text-content {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-aboutMe-div {
+    justify-content: space-around;
+  }
+
+  .about-main {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .aboutMe-text {
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .aboutMe-nickname {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .aboutMe-text-p {
+    font-size: 20px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .aboutMe-text-content {
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .aboutMe-main {
+    display: block;
+  }
+
+  .button-aboutMe-div {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .portfolio-repo-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .show-on-desktop {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+}

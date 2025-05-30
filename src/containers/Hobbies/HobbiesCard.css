@@ -1,0 +1,25 @@
+.hobbies-card-main {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.hobbies-card-image-div > * {
+  /* height: 170px; */
+  width: 140px;
+  border-radius: 7px;
+}
+
+.hobbies-card-content {
+  margin-left: 20px;
+}
+
+.hobbies-card-title {
+  /* font-size: 24px; */
+  margin: 20px 0px 0px 0px;
+  color: #2ba486cd;
+}
+
+.hobbies-card-text {
+}

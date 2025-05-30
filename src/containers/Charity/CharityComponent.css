@@ -1,0 +1,137 @@
+.charity-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+
+.charity-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.charity-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.charity-title {
+  font-size: 50px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+  text-align: center;
+  margin-top: 0px;
+}
+
+.button-charity-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.button-charity-div > * {
+  margin-right: 0.5rem;
+}
+
+.charity-text {
+  /* margin-top: 80px; */
+  font-size: 70px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+}
+
+.charity-nickname {
+  font-size: 30px;
+  line-height: 0px;
+  font-family: "Google Sans Bold Italic";
+}
+
+.charity-text-p {
+  font-size: 40px;
+  line-height: 40px;
+  margin-right: 40px;
+  text-align: center;
+  font-family: "Google Sans Medium";
+}
+
+.charity-text-content {
+  font-size: 24px;
+  line-height: 40px;
+  margin-right: 40px;
+  font-family: "Google Sans Medium";
+}
+
+.charity-description {
+  width: 60%;
+  text-align: center;
+}
+
+.charity-image-div > * {
+  max-width: 100%;
+  width: 400px;
+  /* height: auto; */
+  /* height: 60%; */
+  border-radius: 40px;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .charity-text {
+    font-size: 50px;
+  }
+
+  .charity-text-p {
+    font-size: 24px;
+  }
+
+  .charity-text-content {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-charity-div {
+    justify-content: space-around;
+  }
+
+  .charity-text {
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .charity-nickname {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .charity-text-p {
+    font-size: 20px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .charity-text-content {
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .charity-main {
+    display: block;
+  }
+
+  .button-charity-div {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .portfolio-repo-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
