@@ -1,22 +1,20 @@
-/* Change this file to get your personal Porfolio */
 
-// Website related settings
 const settings = {
-  isSplash: false, // Change this to false if you don't want Splash screen.
+  isSplash: false, 
 };
 
-//Home Page
 const greeting = {
-  title: "Cherif Fall",
-  logo_name: "Cherif Fall",
+  title: "Cherif A Fall",
+  logo_name: "Cherif A Fall",
   nickname: null,
   subTitle:
     "A dedicated and forward-thinking professional with a strong background in web development, project management, and agile methodologies, committed to driving efficiency, collaboration, and innovation.",
   subContent: `My experience as a former collegiate athlete has shaped my approach to leadership, discipline, and teamwork qualities that I now apply in my evolving journey through technology.
     At the core of my work is a belief in lifelong learning and the power of interdisciplinary thinking. Whether leading teams, optimizing workflows, or exploring the latest advancements in IT, I am always seeking ways to innovate and grow in an ever-changing digital landscape.`,
   resumeLink:
-    "https://docs.google.com/document/d/e/2PACX-1vQ_RJI_JGjn64hue7I3MiQJYSvXxZhRBblF9eTe3V_w3zplyLLMmi1eh_k_pS7xlg/pub",
-  portfolio_repository: "https://github.com/RifcheFall",
+   "/Cherif%20Fall_Resume_PDF_2025.pdf"
+,
+  portfolio_repository: "https://github.com/RifcheFall/Rifche-Website.git",
 };
 
 const aboutMe = {
@@ -33,48 +31,48 @@ const aboutMe = {
 const socialMediaLinks = [
   {
     name: "Instagram",
-    link: "https:instagram.com/rifchefall",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+    link: "https://www.instagram.com/rifchefall/profilecard/?igsh=MThoeDc1eW56NTkyeA==",
+    fontAwesomeIcon: "fa-instagram", 
+    backgroundColor: "#E4405F", 
   },
   {
     name: "Twitter",
     link: "https://x.com/RifcheFall",
-    fontAwesomeIcon: "fa-twitter", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+    fontAwesomeIcon: "fa-twitter", 
+    backgroundColor: "#1877F2", 
   },
   {
     name: "LinkedIn",
     link:
-      "https://www.linkedin.com/in/cherif-fall-pmp%C2%AE-psmi-psmii-897aaa146/",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+      "https://www.linkedin.com/in/cherif-fall-pmp%C2%AE-897aaa146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    fontAwesomeIcon: "fa-linkedin-in", 
+    backgroundColor: "#0077B5", 
   },
   {
     name: "Github",
-    link: "https://github.com/RifcheFall",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    link: "https://github.com/RifcheFall/Rifche-Website.git",
+    fontAwesomeIcon: "fa-github", 
+    backgroundColor: "#181717", 
   },
 ];
 const charitySocialMediaLinks = [
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/company/cafallcharity",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5", 
   },
   {
     name: "Facebook",
     link: "https://www.facebook.com/tasinmiftaulmannan",
-    fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+    fontAwesomeIcon: "fa-facebook-f", 
+    backgroundColor: "#1877F2", 
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/cafallcharity",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+    fontAwesomeIcon: "fa-instagram",
+    backgroundColor: "#E4405F", 
   },
   // {
   //   name: "TikTok",
@@ -87,13 +85,13 @@ const charitySocialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
+      title: "Delivering Secure Cloud and Network Solutions through Agile Leadership",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building resposive website using NextJs and React",
-        "⚡ Implementing secure access to database",
-        "⚡ Creating application backend in .Net Core",
-        "⚡ Implementing dynamic script execution defined by user",
+        "⚡Collaborating across teams to align security practices with Agile workflows",
+        "⚡Deploying and managing virtual machines in hybrid cloud environments",
+        "⚡Conducting risk assessments and enforcing security compliance standards",
+        "⚡Enforcing cloud and network security best practices across environments",
       ],
       softwareSkills: [
         {
