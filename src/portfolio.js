@@ -1,19 +1,16 @@
-
 const settings = {
-  isSplash: false, 
+  isSplash: false,
 };
 
 const greeting = {
   title: "Cherif A Fall",
-  logo_name: "Cherif A Fall",
+  logo_name: "Cherif  Fall",
   nickname: null,
   subTitle:
     "A dedicated and forward-thinking professional with a strong background in web development, project management, and agile methodologies, committed to driving efficiency, collaboration, and innovation.",
   subContent: `My experience as a former collegiate athlete has shaped my approach to leadership, discipline, and teamwork qualities that I now apply in my evolving journey through technology.
     At the core of my work is a belief in lifelong learning and the power of interdisciplinary thinking. Whether leading teams, optimizing workflows, or exploring the latest advancements in IT, I am always seeking ways to innovate and grow in an ever-changing digital landscape.`,
-  resumeLink:
-   "/Cherif%20Fall_Resume_PDF_2025.pdf"
-,
+  resumeLink: "/Cherif%20Fall_Resume_PDF_2025.pdf",
   portfolio_repository: "https://github.com/RifcheFall/Rifche-Website.git",
 };
 
@@ -32,47 +29,46 @@ const socialMediaLinks = [
   {
     name: "Instagram",
     link: "https://www.instagram.com/rifchefall/profilecard/?igsh=MThoeDc1eW56NTkyeA==",
-    fontAwesomeIcon: "fa-instagram", 
-    backgroundColor: "#E4405F", 
+    fontAwesomeIcon: "fa-instagram",
+    backgroundColor: "#E4405F",
   },
   {
     name: "Twitter",
     link: "https://x.com/RifcheFall",
-    fontAwesomeIcon: "fa-twitter", 
-    backgroundColor: "#1877F2", 
+    fontAwesomeIcon: "fa-twitter",
+    backgroundColor: "#1877F2",
   },
   {
     name: "LinkedIn",
-    link:
-      "https://www.linkedin.com/in/cherif-fall-pmp%C2%AE-897aaa146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    fontAwesomeIcon: "fa-linkedin-in", 
-    backgroundColor: "#0077B5", 
+    link: "https://www.linkedin.com/in/cherif-fall-pmp%C2%AE-897aaa146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5",
   },
   {
     name: "Github",
     link: "https://github.com/RifcheFall/Rifche-Website.git",
-    fontAwesomeIcon: "fa-github", 
-    backgroundColor: "#181717", 
+    fontAwesomeIcon: "fa-github",
+    backgroundColor: "#181717",
   },
 ];
 const charitySocialMediaLinks = [
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/company/cafallcharity",
+    link: "https://www.linkedin.com/company/86898968/admin/page-posts/published/",
     fontAwesomeIcon: "fa-linkedin-in",
-    backgroundColor: "#0077B5", 
+    backgroundColor: "#0077B5",
   },
   {
     name: "Facebook",
-    link: "https://www.facebook.com/tasinmiftaulmannan",
-    fontAwesomeIcon: "fa-facebook-f", 
-    backgroundColor: "#1877F2", 
+    link: "https://www.facebook.com/share/19LcfdWaap/?mibextid=wwXIfr",
+    fontAwesomeIcon: "fa-facebook-f",
+    backgroundColor: "#1877F2",
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/cafallcharity",
+    link: "https://www.instagram.com/cafallcharity?igsh=MWZ6YWF1NmhocHNpcg%3D%3D&utm_source=qr",
     fontAwesomeIcon: "fa-instagram",
-    backgroundColor: "#E4405F", 
+    backgroundColor: "#E4405F",
   },
   // {
   //   name: "TikTok",
@@ -85,7 +81,8 @@ const charitySocialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Delivering Secure Cloud and Network Solutions through Agile Leadership",
+      title:
+        "Delivering Secure Cloud and Network Solutions through Agile Leadership",
       fileName: "FullStackImg",
       skills: [
         "⚡Collaborating across teams to align security practices with Agile workflows",
@@ -95,28 +92,28 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "ReactJS",
+          skillName: "HTML",
           fontAwesomeClassname: "simple-icons:react",
           style: {
             color: "#61DAFB",
           },
         },
         {
-          skillName: "NextJs",
+          skillName: "CSS",
           fontAwesomeClassname: "akar-icons:nextjs-fill",
           style: {
             color: "#626262",
           },
         },
         {
-          skillName: ".Net Core",
+          skillName: "JavaScript",
           fontAwesomeClassname: "mdi:dot-net",
           style: {
             color: "#5C2D91",
           },
         },
         {
-          skillName: "NodeJS",
+          skillName: "Python",
           fontAwesomeClassname: "simple-icons:node-dot-js",
           style: {
             color: "#339933",
@@ -130,7 +127,7 @@ const skills = {
           },
         },
         {
-          skillName: "JavaScript",
+          skillName: "Linux",
           fontAwesomeClassname: "simple-icons:javascript",
           style: {
             color: "#F7DF1E",
@@ -234,11 +231,11 @@ const sLanguage = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "React",
+      Stack: "HTML",
       progressPercentage: "97%",
     },
     {
-      Stack: "NextJs",
+      Stack: "Css",
       progressPercentage: "85%",
     },
     {
@@ -246,15 +243,15 @@ const sLanguage = {
       progressPercentage: "98%",
     },
     {
-      Stack: "TypeScript",
+      Stack: "Python",
       progressPercentage: "90%",
     },
     {
-      Stack: "Redux",
+      Stack: "AWS",
       progressPercentage: "90%",
     },
     {
-      Stack: "Tailwind CSS",
+      Stack: "GIT GitHub",
       progressPercentage: "95%",
     },
     {
@@ -262,23 +259,23 @@ const sLanguage = {
       progressPercentage: "90%",
     },
     {
-      Stack: "Python",
+      Stack: "Linux",
       progressPercentage: "80%",
     },
     {
-      Stack: ".Net Core",
+      Stack: "TypeScript",
       progressPercentage: "70%",
     },
     {
-      Stack: "AWS",
+      Stack: "Network",
       progressPercentage: "75%",
     },
     {
-      Stack: "GraphQL", //Insert stack or technology you have experience in
+      Stack: "Cybersecurity", //Insert stack or technology you have experience in
       progressPercentage: "80%", //Insert relative proficiency in percentage
     },
     {
-      Stack: "PostgreSQL",
+      Stack: "SQL",
       progressPercentage: "80%",
     },
   ],
@@ -293,15 +290,15 @@ const tools = {
       progressPercentage: "90%",
     },
     {
-      Stack: "Scrum",
+      Stack: "WaterFall",
       progressPercentage: "80%",
     },
     {
-      Stack: "Kanban", //Insert stack or technology you have experience in
+      Stack: "Scrum", //Insert stack or technology you have experience in
       progressPercentage: "85%", //Insert relative proficiency in percentage
     },
     {
-      Stack: "SAFe", //Insert stack or technology you have experience in
+      Stack: "Kanban", //Insert stack or technology you have experience in
       progressPercentage: "80%", //Insert relative proficiency in percentage
     },
   ],
@@ -356,28 +353,28 @@ const degrees = {
   degrees: [
     {
       title: "Washburn University",
-      subtitle: "B.Sc. in Computer Science and Engineering",
+      subtitle: "B.Sc. in Business Management, Minor in Computer Science",
       logo_path: "washburn_logo.jpg",
       alt_name: "IIITDM Kurnool",
-      duration: "March 2016 - January 2021",
-      cgpa: "3.855 / 4.00",
+      duration: "August 2017 - December 2019",
+      cgpa: "3.5",
       descriptions: [
         "⚡ I was part of the Men’s Basketball Team, where my experiences as a student-athlete enriched my university experience and prepared me for future challenges.",
       ],
-      website_link: "http://aust.edu/",
+      website_link: "https://www.washburn.edu/index.html",
       photo: "wash.png",
     },
     {
       title: "Cloud County Community College",
-      subtitle: "Major in Computer Science and Engineering",
+      subtitle: "Major in Business Management",
       logo_path: "cloud_college_logo.jpg",
       alt_name: "IIITDM Kurnool",
-      duration: "March 2016 - January 2021",
-      cgpa: "3.855 / 4.00",
+      duration: "August 2015 - May 2017",
+      cgpa: "3.5",
       descriptions: [
         "⚡ I continued to be an active member of the Men’s Basketball Team, further honing my abilities both on and off the court.",
       ],
-      website_link: "http://aust.edu/",
+      website_link: "https://www.cloud.edu/",
       photo: "cloud.png",
     },
     {
@@ -385,12 +382,12 @@ const degrees = {
       subtitle: "High School Diploma",
       logo_path: "lee_academy_logo.jpg",
       alt_name: "IIITDM Kurnool",
-      duration: "March 2016 - January 2021",
-      cgpa: "3.855 / 4.00",
+      duration: "August 2012 - May 2014",
+      cgpa: "4.00",
       descriptions: [
         "⚡ I was a member of the Men’s Basketball Team, which played a pivotal role in developing my leadership and teamwork skills.",
       ],
-      website_link: "http://aust.edu/",
+      website_link: "https://www.leeacademy.org/",
       photo: "lee.png",
     },
   ],
@@ -402,7 +399,7 @@ const certifications = {
       title: "Certified Scrum Master (PSM I) & (PSM II)",
       subtitle: "- Scrum.org",
       // logo_path: "tencon.png",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "scrum.png",
       certificate_link:
         // "https://drive.google.com/file/d/1wLzB3oGkyI4svn09Yor2sAeSF3DbPzeU/view?usp=sharing",
         "",
@@ -413,7 +410,7 @@ const certifications = {
       title: "SAFe Scrum Master 6.0 (Scaled Agile Inc)",
       subtitle: "",
       // logo_path: "michigan_logo.png",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "safe.png",
       certificate_link:
         // "https://coursera.org/share/259bcebba35c1ba43934608a5fab9907",
         "",
@@ -424,7 +421,7 @@ const certifications = {
       title: "Project Management Professional (PMP)",
       subtitle: "PMI",
       // logo_path: "michigan_logo.png",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "pmp.png",
       certificate_link:
         // "https://coursera.org/share/39d3749b06308a77e0f596129029d4fe",
         "",
@@ -435,7 +432,7 @@ const certifications = {
     {
       title: "Generative AI Overview (PMI)",
       subtitle: "",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "gen.png",
       certificate_link:
         // "https://drive.google.com/file/d/1qcJipEjDB3YanZor4xHpU_9BC73FuCud/view?usp=sharing",
         "",
