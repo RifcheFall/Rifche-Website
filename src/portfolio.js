@@ -432,7 +432,7 @@ const certifications = {
     {
       title: "Generative AI Overview (PMI)",
       subtitle: "",
-      logo_path: "gen.png",
+      logo_path: "gn.jpeg",
       certificate_link:
         // "https://drive.google.com/file/d/1qcJipEjDB3YanZor4xHpU_9BC73FuCud/view?usp=sharing",
         "",
@@ -442,7 +442,7 @@ const certifications = {
     {
       title: "Data Landscape Of GEN AI For Project Managers (PMI)",
       subtitle: "",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "dataai.png",
       certificate_link:
         // "https://drive.google.com/file/d/1LYzFiq0DDYYiDHowG4nbPjgmjCgd3QiV/view?usp=sharing",
         "",
@@ -452,7 +452,7 @@ const certifications = {
     {
       title: "Talking To AI: Prompt Engineering For Project Managers",
       subtitle: "",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "talktoai.jpeg",
       certificate_link:
         // "https://drive.google.com/file/d/12qhxMM2DGp4YVdG9wcpFDNX7r1bjqumx/view?usp=sharing",
         "",
@@ -462,7 +462,7 @@ const certifications = {
     {
       title: "CompTIA Network+ ce Certification",
       subtitle: "",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "net.png",
       certificate_link:
         // "https://drive.google.com/file/d/12f_pCjrOIkx0SMC0mqjnxpMwc9tesQoC/view?usp=sharing",
         "",
@@ -472,7 +472,7 @@ const certifications = {
     {
       title: "CompTIA Security+ ce Certification",
       subtitle: "",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "sec.png",
       certificate_link:
         // "https://drive.google.com/file/d/12f_pCjrOIkx0SMC0mqjnxpMwc9tesQoC/view?usp=sharing",
         "",
