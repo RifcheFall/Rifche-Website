@@ -359,7 +359,7 @@ const degrees = {
       duration: "August 2017 - December 2019",
       cgpa: "3.5",
       descriptions: [
-        "⚡ I was part of the Men’s Basketball Team, where my experiences as a student-athlete enriched my university experience and prepared me for future challenges.",
+        "⚡ My academic journey at Washburn University culminated in a Bachelor of Science in Business Management with a minor in Computer Science. The business courses I took provided real-world insight into organizational behavior, strategic planning, and effective communication. I learned how to analyze problems, think critically, and present solutions backed by data. These lessons have helped me navigate complex projects and work more efficiently with both technical and non-technical teams. The combination of business and technology has enabled me to see the bigger picture while also understanding the technical details. This background continues to guide my approach to aligning business goals with practical execution in the real world.",
       ],
       website_link: "https://www.washburn.edu/index.html",
       photo: "wash.png",
@@ -372,7 +372,7 @@ const degrees = {
       duration: "August 2015 - May 2017",
       cgpa: "3.5",
       descriptions: [
-        "⚡ I continued to be an active member of the Men’s Basketball Team, further honing my abilities both on and off the court.",
+        "⚡ During my time at Cloud County Community College, I was proud to serve as a Student Ambassador, a Resident Assistant, and a member of the Men’s Basketball Team. These diverse roles offered me a well rounded experience that shaped both my academic and personal development. As a Student Ambassador, I led campus tours and participated in outreach events, which strengthened my communication and leadership skills. My role as a Resident Assistant taught me how to manage responsibilities, resolve conflicts, and support students from different cultural backgrounds especially international students adjusting to life in a new country. Being on the basketball team further instilled discipline, teamwork, and resilience, helping me balance academics, athletics, and leadership commitments. Altogether, these experiences laid a strong foundation in adaptability, empathy, and collaboration qualities that continue to guide my approach in both tech and professional environments.",
       ],
       website_link: "https://www.cloud.edu/",
       photo: "cloud.png",
@@ -385,7 +385,7 @@ const degrees = {
       duration: "August 2012 - May 2014",
       cgpa: "4.00",
       descriptions: [
-        "⚡ I was a member of the Men’s Basketball Team, which played a pivotal role in developing my leadership and teamwork skills.",
+        "⚡ At Lee Academy, I had the unique opportunity to be part of both the soccer and basketball teams, which played a vital role in shaping my discipline, adaptability, and work ethic. Balancing two sports alongside my academic responsibilities taught me how to manage my time effectively and stay focused on my goals. Competing in both environments exposed me to different team dynamics and strategies, helping me become more versatile and collaborative. These experiences not only enhanced my physical and mental resilience but also taught me how to lead by example, communicate under pressure, and stay committed to continuous improvement skills that now influence how I approach challenges in life and in the professional world.",
       ],
       website_link: "https://www.leeacademy.org/",
       photo: "lee.png",
@@ -482,7 +482,7 @@ const certifications = {
     {
       title: "AWS Certified Cloud Practitioner",
       subtitle: "- Cory House",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "cl.jpeg",
       certificate_link:
         // "https://drive.google.com/file/d/15UMAKzJq1g1cIrz-sp1Ve0efg-M-hAq1/view",
         "",
@@ -492,7 +492,7 @@ const certifications = {
     {
       title: "Practical Application of Gen AI for Project Managers",
       subtitle: "",
-      logo_path: "pluralsight_logo.png",
+      logo_path: "pagen.png",
       certificate_link:
         // "https://drive.google.com/file/d/15mPlLGrjpmkdlf3eyi7B_NLG8Wro5EEg/view",
         "",
