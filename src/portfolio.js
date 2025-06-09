@@ -92,84 +92,84 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "HTML",
+          skillName: "HTML5",
           fontAwesomeClassname: "simple-icons:react",
           style: {
             color: "#61DAFB",
           },
         },
         {
-          skillName: "CSS",
+          skillName: "CSS3 / Tailwind CSS",
           fontAwesomeClassname: "akar-icons:nextjs-fill",
           style: {
             color: "#626262",
           },
         },
         {
-          skillName: "JavaScript",
+          skillName: "JavaScript (ES6+)",
           fontAwesomeClassname: "mdi:dot-net",
           style: {
             color: "#5C2D91",
           },
         },
         {
-          skillName: "Python",
+          skillName: "React.js",
           fontAwesomeClassname: "simple-icons:node-dot-js",
           style: {
             color: "#339933",
           },
         },
         {
-          skillName: "Redux",
+          skillName: "Python",
           fontAwesomeClassname: "tabler:brand-redux",
           style: {
             color: "#7749bd",
           },
         },
         {
-          skillName: "Linux",
+          skillName: "Node.js",
           fontAwesomeClassname: "simple-icons:javascript",
           style: {
             color: "#F7DF1E",
           },
         },
         {
-          skillName: "TypeScript",
+          skillName: ".NET Core (C#)",
           fontAwesomeClassname: "devicon:typescript",
           style: {
             color: "#3178c6",
           },
         },
         {
-          skillName: "C#",
+          skillName: "SQL",
           fontAwesomeClassname: "teenyicons:c-sharp-solid",
           style: {
             color: "#953dac",
           },
         },
         {
-          skillName: "MS SQL Server",
+          skillName: "Linux (Ubuntu, Kali)",
           fontAwesomeClassname: "tabler:sql",
           style: {
             color: "#c42626",
           },
         },
         {
-          skillName: "MongoDB",
+          skillName: "Cloud Computing (AWS, Azure Basics)",
           fontAwesomeClassname: "vscode-icons:file-type-mongo",
           style: {
             color: "#c42626",
           },
         },
         {
-          skillName: "Firebase",
+          skillName: "Networking (TCP/IP, DNS, OSI Model)",
           fontAwesomeClassname: "logos:firebase",
           style: {
             color: "#c42626",
           },
         },
         {
-          skillName: "Docker",
+          skillName: "Cybersecurity Fundamentals (SIEM, Vulnerability Analysis, Incident Response)",
           fontAwesomeClassname: "skill-icons:docker",
           style: {
             color: "#c42626",
@@ -212,15 +212,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend", //Insert stack or technology you have experience in
+      Stack: "Python for scripting and automation", //Insert stack or technology you have experience in
       progressPercentage: "98%", //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "AWS Cloud Fundamentals",
       progressPercentage: "90%",
     },
     {
-      Stack: "Project Management",
+      Stack: "Linux command-line operations",
       progressPercentage: "85%",
     },
   ],
@@ -332,7 +332,7 @@ const hobbies = {
 const charity = {
   logo: "",
   description:
-    "In The Heart Of Senegal, Where Warm Sands Blend With The Youthful Love For Sports, A Young Boy Named Cherif Alwaly Fall Grew Up Dreaming Of Basketball. Cherif Also Witnessed The Harsh Realities Faced By Many: The Struggle To Afford Even The Most Necessities, Like Shoes To Play The Game They Loved. These Scenes Left An Unforgettable Marks On Cherif's Soul, Igniting A Fire Within Him To Make A Difference. In 2014, Cherif Turned His Passion Into Action, Founding CAFAll Charity—A Source Of Hope, Dedicated To Uplifting Communities Across Senegal And Beyond. Born From A Desire To Give Back To The Country That Shaped Him, CAFAll Charity Stands As A Testament To Cherif's Commitments To Making A Positive Impact. As Cherif's Journey Carried Him From The Streets Of Senegal To The Basketball Courts Of The United States, His Heart Remained Attached To His Roots. With Every Game Won And Every Hoop Scored, He Felt A Deep Sense Of Responsibility To Those Who Had Supported Him Along The Way. Through CAFAll Charity, Cherif Channels This Gratitude Into Tangible Change, Striving To Create A World Where Every Child Has The Opportunity To Thrive. But CAFAll Charity Is More Than Just A Philanthropic Endeavor—It's A Labor Of Love, Fueled By The Collective Spirit Of Those Who Believe In Cherif's Vision. Together, They Work Tirelessly To Break Down Barriers And Empower The Next Generation Of Leaders, Athletes, And Changemakers.",
+    "In The Heart Of Senegal, Where Warm Sands Blend With The Youthful Love For Sports, A Young Boy Named Cherif Alwaly Fall Grew Up Dreaming Of Basketball. Cherif Also Witnessed The Harsh Realities Faced By Many: The Struggle To Afford Even The Most Necessities, Like Shoes To Play The Game They Loved. These Scenes Left An Unforgettable Marks On Cherif's Soul, Igniting A Fire Within Him To Make A Difference. In 2014, Cherif Turned His Passion Into Action, Founding CAFAll Charity A Source Of Hope, Dedicated To Uplifting Communities Across Senegal And Beyond. Born From A Desire To Give Back To The Country That Shaped Him, CAFAll Charity Stands As A Testament To Cherif's Commitments To Making A Positive Impact. As Cherif's Journey Carried Him From The Streets Of Senegal To The Basketball Courts Of The United States, His Heart Remained Attached To His Roots. With Every Game Won And Every Hoop Scored, He Felt A Deep Sense Of Responsibility To Those Who Had Supported Him Along The Way. Through CAFAll Charity, Cherif Channels This Gratitude Into Tangible Change, Striving To Create A World Where Every Child Has The Opportunity To Thrive. But CAFAll Charity Is More Than Just A Philanthropic Endeavor It's A Labor Of Love, Fueled By The Collective Spirit Of Those Who Believe In Cherif's Vision. Together, They Work Tirelessly To Break Down Barriers And Empower The Next Generation Of Leaders, Athletes, And Changemakers.",
 };
 
 // Education Page
@@ -398,7 +398,6 @@ const certifications = {
     {
       title: "Certified Scrum Master (PSM I) & (PSM II)",
       subtitle: "- Scrum.org",
-      // logo_path: "tencon.png",
       logo_path: "scrum.png",
       certificate_link:
         // "https://drive.google.com/file/d/1wLzB3oGkyI4svn09Yor2sAeSF3DbPzeU/view?usp=sharing",
@@ -409,7 +408,6 @@ const certifications = {
     {
       title: "SAFe Scrum Master 6.0 (Scaled Agile Inc)",
       subtitle: "",
-      // logo_path: "michigan_logo.png",
       logo_path: "safe.png",
       certificate_link:
         // "https://coursera.org/share/259bcebba35c1ba43934608a5fab9907",
@@ -420,7 +418,6 @@ const certifications = {
     {
       title: "Project Management Professional (PMP)",
       subtitle: "PMI",
-      // logo_path: "michigan_logo.png",
       logo_path: "pmp.png",
       certificate_link:
         // "https://coursera.org/share/39d3749b06308a77e0f596129029d4fe",
@@ -505,9 +502,9 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work and Volunteership",
+  subtitle: "Employment History",
   description:
-    "Fullstack Developer with 2+ years of experience working with React, .Net and NodeJs in an agile environment. Experience in leading a 5 member frontend team to achieve concrete goals on a strict deadline in a large scale project consisting over millions of records of drivers all throughout North America.",
+    "Project Manager and Scrum Master with 10 years of experience leading cross-functional teams in agile environments. Proven track record managing large-scale projects, facilitating sprint planning, and aligning business goals with technical solutions. Hands-on experience as a Business Analyst Intern gathering requirements, analyzing data, and driving collaboration between stakeholders to deliver impactful results across diverse teams.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -557,7 +554,7 @@ const experience = {
           company: "Koubrah",
           company_url: "http://www.koubrah.com/",
           logo_path: "koubrah_logo.jpg",
-          duration: "January 2018 – March 2022",
+          duration: "Jun 2018 – March 2022",
           location: "Washington, DC",
           description: "",
           features: [
@@ -575,7 +572,7 @@ const experience = {
           company: "ECI Services",
           company_url: "https://eciservices.com/",
           logo_path: "eciservices_logo.jpg",
-          duration: "December 2017 – November 2018",
+          duration: "May 2016 – May 2018",
           location: "Topeka, Kansas",
           description: "",
           features: [
@@ -595,8 +592,8 @@ const experience = {
           title: "Business Analyst Intern",
           company: "CreativeOne",
           company_url: "https://creativeone.com/",
-          logo_path: "creativeone_logo.jpg",
-          duration: "January 2016 – November 2017",
+          logo_path: "creative.png",
+          duration: "January 2016 – May 2016",
           location: "Topeka, Kansas",
           description: "",
           features: [
@@ -610,23 +607,7 @@ const experience = {
         },
       ],
     },
-    // {
-    //   title: "Volunteerships",
-    //   experiences: [
-    //     {
-    //       title: "Developer Program Member",
-    //       company: "Github",
-    //       company_url: "https://github.com/",
-    //       logo_path: "github_logo.png",
-    //       duration: "September 2020 - PRESENT",
-    //       location: "Work From Home",
-    //       description:
-    //         "I am actively contributing to many opensource projects. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
-    //       features: [],
-    //       color: "#181717",
-    //     },
-    //   ],
-    // },
+
   ],
 };
 
@@ -634,7 +615,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Full Stack projects and deploy them to web applications using cloud infrastructure. Stil trying to gain experience by trying my hands on different projects.",
+    "My projects reflect a hands-on approach to learning and problem solving using real world tools and environments. I built this portfolio from the ground up to showcase my skills and creativity. I've also set up a personal home lab to experiment with networking, security, and system administration. In addition, I’m working on cloud-based projects to deepen my understanding of scalable solutions, and actively contributing to the development of the CAFall Charity website to support community-driven goals through impactful tech solutions.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -644,7 +625,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "learner.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Web Fullstack development, ML, AI, Android, Cloud and Opensource Development.",
+      "I’m passionate about technology, teamwork, and continuous learning. Whether it’s managing agile projects, building cloud-based solutions, analyzing networks, or exploring cybersecurity, I enjoy applying my skills to solve real world problems. I’m active on multiple platforms and always open to connect, collaborate, or support others on their learning and tech journey. Feel free to reach out I typically respond within 24 hours.",
   },
   blogSection: {
     title: "Blogs",
