@@ -213,15 +213,15 @@ const techStack = {
   experience: [
     {
       Stack: "Python for scripting and automation", //Insert stack or technology you have experience in
-      progressPercentage: "98%", //Insert relative proficiency in percentage
+      progressPercentage: "70%", //Insert relative proficiency in percentage
     },
     {
       Stack: "AWS Cloud Fundamentals",
-      progressPercentage: "90%",
+      progressPercentage: "70%",
     },
     {
       Stack: "Linux command-line operations",
-      progressPercentage: "85%",
+      progressPercentage: "65%",
     },
   ],
 };
