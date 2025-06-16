@@ -615,7 +615,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects reflect a hands-on approach to learning and problem solving using real world tools and environments. I built this portfolio from the ground up to showcase my skills and creativity. I've also set up a personal home lab to experiment with networking, security, and system administration. In addition, I’m working on cloud-based projects to deepen my understanding of scalable solutions, and actively contributing to the development of the CAFall Charity website to support community-driven goals through impactful tech solutions.",
+    "My projects reflect a hands on approach to learning and problem solving using real world tools and environments. I built this portfolio from the ground up to showcase my skills and creativity. I've also set up a personal home lab to experiment with networking, security, and system administration. In addition, I’m working on cloud-based projects to deepen my understanding of scalable solutions, and actively contributing to the development of the CAFall Charity website to support community driven goals through impactful tech solutions.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -625,7 +625,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "learner.png",
     description:
-      "I’m passionate about technology, teamwork, and continuous learning. Whether it’s managing agile projects, building cloud-based solutions, analyzing networks, or exploring cybersecurity, I enjoy applying my skills to solve real world problems. I’m active on multiple platforms and always open to connect, collaborate, or support others on their learning and tech journey. Feel free to reach out I typically respond within 24 hours.",
+      "I’m passionate about technology, teamwork, and continuous learning. Whether it’s managing agile projects, building Cloud Based Solutions, analyzing Networks, or Exploring Cybersecurity, I enjoy applying my skills to solve real world problems. I’m active on multiple platforms and always open to connect, collaborate, or support others on their learning and tech journey. Feel free to reach out I typically respond within 24 hours.",
   },
   blogSection: {
     title: "Blogs",
