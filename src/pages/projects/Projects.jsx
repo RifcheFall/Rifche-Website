@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import Header from "../../components/header/Header";
-import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import Button from "../../components/button/Button";
-import TopButton from "../../components/topButton/TopButton";
+import Header from "../../components/header/Header.jsx";
+import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard.jsx";
+import Button from "../../components/button/Button.jsx";
+import TopButton from "../../components/topButton/TopButton.jsx";
 // import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 import { projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
+import ProjectsImg from "./ProjectsImg.jsx";
 
 class Projects extends Component {
   render() {
@@ -57,7 +57,7 @@ class Projects extends Component {
         <Button
           text={"More Projects"}
           className="project-button"
-          href="https://github.com/Tasin5541"
+          href="https://www.youtube.com/@CherifFall1/videos"
           newTab={true}
           theme={theme}
         />
