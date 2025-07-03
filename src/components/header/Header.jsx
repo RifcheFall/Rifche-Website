@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Header.css";
 // import { Fade } from "react-reveal";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 
@@ -26,7 +26,6 @@ class Header extends Component {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-
         <div>
           <header className="header">
             <NavLink to={link} className="logo">
@@ -116,21 +115,25 @@ class Header extends Component {
                   Experience
                 </NavLink>
               </li>
-              { <li>
-                <NavLink
-                  to="/projects"
-                  // tag={Link}
-                  style={({ isActive }) =>
-    isActive
-      ? { fontWeight: "bold", color: theme.text }
-      : { color: theme.text }
-  }
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Projects
-                </NavLink>
-              </li> }
+              {
+                <li>
+                  <NavLink
+                    to="/projects"
+                    // tag={Link}
+                    style={({ isActive }) =>
+                      isActive
+                        ? { fontWeight: "bold", color: theme.text }
+                        : { color: theme.text }
+                    }
+                    onMouseEnter={(event) =>
+                      onMouseEnter(event, theme.highlight)
+                    }
+                    onMouseOut={(event) => onMouseOut(event)}
+                  >
+                    Projects
+                  </NavLink>
+                </li>
+              }
               <li>
                 <NavLink
                   to="/hobbies"

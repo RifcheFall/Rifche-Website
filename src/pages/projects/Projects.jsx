@@ -4,7 +4,7 @@ import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard.jsx";
 import Button from "../../components/button/Button.jsx";
 import TopButton from "../../components/topButton/TopButton.jsx";
 // import { Fade } from "react-reveal";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
@@ -28,7 +28,8 @@ class Projects extends Component {
 											src={new URL(`../../assests/images/${projectsHeader["avatar_image_path"]}`, import.meta.url).href}
 											alt=""
 										/> */}
-                <ProjectsImg theme={theme} />
+                <img src="/images/photo_1.jpg" alt="" />
+                {/* <ProjectsImg theme={theme} /> */}
               </div>
               <div className="projects-heading-text-div">
                 <h1
