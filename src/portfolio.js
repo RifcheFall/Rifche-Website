@@ -616,7 +616,7 @@ const projectsHeader = {
   title: "Projects",
   description:
     "My projects reflect a hands on approach to learning and problem solving using real world tools and environments. I built this portfolio from the ground up to showcase my skills and creativity. I've also set up a personal home lab to experiment with networking, security, and system administration. In addition, I’m working on cloud-based projects to deepen my understanding of scalable solutions, and actively contributing to the development of the CAFall Charity website to support community driven goals through impactful tech solutions.",
-  avatar_image_path: "projects_image.svg",
+  avatar_image_path:"aws.png",
 };
 
 // Contact Page
