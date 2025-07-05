@@ -3,7 +3,7 @@ import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 // import { Fade } from "react-reveal";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
 import AndroidImg from "./AndroidImg";
@@ -34,11 +34,12 @@ class SkillSection extends Component {
                 viewport={{ once: true, amount: 0.2 }}
               >
                 <div className="skills-image-div">
-                  { <img
+                  {/* { <img
                     alt="Ashutosh is Analysing Data"
                     src={new URL(`../../assests/images/${skill.imagePath}`, import.meta.url).href}
-                  ></img> }
-                  <GetSkillSvg fileName={skill.fileName} theme={theme}/>
+                  ></img> } */}
+                  {/* <GetSkillSvg fileName={skill.fileName} theme={theme} /> */}
+                  <img src="/images/photo_2.jpg" alt="" />
                 </div>
               </motion.div>
 
