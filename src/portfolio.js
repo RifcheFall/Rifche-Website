@@ -62,7 +62,7 @@ const charitySocialMediaLinks = [
     name: "Facebook",
     link: "https://www.facebook.com/share/19LcfdWaap/?mibextid=wwXIfr",
     fontAwesomeIcon: "fa-facebook-f",
-    backgroundColor: "#1877F2",
+    backgroundColor: "#5381beff",
   },
   {
     name: "Instagram",
@@ -116,7 +116,7 @@ const skills = {
           skillName: "React.js",
           fontAwesomeClassname: "simple-icons:node-dot-js",
           style: {
-            color: "#339933",
+            color: "#437e43ff",
           },
         },
         {
