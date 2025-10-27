@@ -39,7 +39,7 @@ class SkillSection extends Component {
                     src={new URL(`../../assests/images/${skill.imagePath}`, import.meta.url).href}
                   ></img> } */}
                   {/* <GetSkillSvg fileName={skill.fileName} theme={theme} /> */}
-                  <img src="/images/photo_2.jpg" alt="" />
+                  <img src="/images/fit.jpg" alt="" />
                 </div>
               </motion.div>
 

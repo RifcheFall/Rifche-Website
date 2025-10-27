@@ -243,15 +243,15 @@ const sLanguage = {
       progressPercentage: "98%",
     },
     {
+      Stack: "TypeScript",
+      progressPercentage: "90%",
+    },
+    {
       Stack: "Python",
       progressPercentage: "90%",
     },
     {
-      Stack: "AWS",
-      progressPercentage: "90%",
-    },
-    {
-      Stack: "GIT GitHub",
+      Stack: "SQL",
       progressPercentage: "95%",
     },
     {
@@ -259,23 +259,23 @@ const sLanguage = {
       progressPercentage: "90%",
     },
     {
-      Stack: "Linux",
+      Stack: "AWS",
       progressPercentage: "80%",
     },
     {
-      Stack: "TypeScript",
+      Stack: "Git & GitHub",
       progressPercentage: "70%",
     },
     {
-      Stack: "Network",
+      Stack: "Linux",
       progressPercentage: "75%",
     },
     {
-      Stack: "Cybersecurity", //Insert stack or technology you have experience in
+      Stack: "Network", //Insert stack or technology you have experience in
       progressPercentage: "80%", //Insert relative proficiency in percentage
     },
     {
-      Stack: "SQL",
+      Stack: "Cybersecurity",
       progressPercentage: "80%",
     },
   ],
@@ -287,19 +287,19 @@ const tools = {
   experience: [
     {
       Stack: "Agile Methodologies",
-      progressPercentage: "90%",
+      progressPercentage: "100%",
     },
     {
       Stack: "WaterFall",
-      progressPercentage: "80%",
+      progressPercentage: "95%",
     },
     {
       Stack: "Scrum", //Insert stack or technology you have experience in
-      progressPercentage: "85%", //Insert relative proficiency in percentage
+      progressPercentage: "100%", //Insert relative proficiency in percentage
     },
     {
       Stack: "Kanban", //Insert stack or technology you have experience in
-      progressPercentage: "80%", //Insert relative proficiency in percentage
+      progressPercentage: "85%", //Insert relative proficiency in percentage
     },
   ],
 };
