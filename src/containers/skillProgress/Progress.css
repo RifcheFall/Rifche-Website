@@ -1,7 +1,7 @@
 .meter { 
     height: 20px;
     position: relative;
-    background: rgb(213, 164, 14);
+    background: rgb(35, 63, 204);
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
@@ -13,7 +13,8 @@
     border-bottom-right-radius: 6px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #12cb18;
+    background-color: #1cb3dd;
+    background-color: 
     position: relative;
     overflow: hidden;
 }
