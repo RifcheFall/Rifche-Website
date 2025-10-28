@@ -32,7 +32,7 @@ export default function StackProgress(props) {
                     </div>
 
                     <div className="skills-image">
-                        <img alt="Skills" src={new URL("../../assests/images/skill.svg", import.meta.url).href} />
+                        <img alt="Skills" src={new URL("../../assests/images/fall.png", import.meta.url).href} />
                     </div>
 
                 </div>
