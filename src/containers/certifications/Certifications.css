@@ -6,9 +6,10 @@
 }
 
 .certs-body-div {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-items: center;
 }
 
 @media (max-width: 1380px) {
@@ -19,7 +20,8 @@
 
 @media (max-width: 768px) {
   .certs-body-div {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .certs-header {
