@@ -397,7 +397,7 @@ const certifications = {
   certifications: [
     {
       title: "Certified Scrum Master (PSM I) & (PSM II)",
-      subtitle: "- Scrum.org",
+      subtitle: "Scrum.org",
       logo_path: "scrum.png",
       certificate_link:
         // "https://drive.google.com/file/d/1wLzB3oGkyI4svn09Yor2sAeSF3DbPzeU/view?usp=sharing",
@@ -407,7 +407,7 @@ const certifications = {
     },
     {
       title: "SAFe Scrum Master 6.0 (Scaled Agile Inc)",
-      subtitle: "",
+      subtitle: "SAFe",
       logo_path: "safe.png",
       certificate_link:
         // "https://coursera.org/share/259bcebba35c1ba43934608a5fab9907",
@@ -428,7 +428,7 @@ const certifications = {
 
     {
       title: "Generative AI Overview (PMI)",
-      subtitle: "",
+      subtitle: "PMI",
       logo_path: "gn.jpeg",
       certificate_link:
         // "https://drive.google.com/file/d/1qcJipEjDB3YanZor4xHpU_9BC73FuCud/view?usp=sharing",
@@ -438,7 +438,7 @@ const certifications = {
     },
     {
       title: "Data Landscape Of GEN AI For Project Managers (PMI)",
-      subtitle: "",
+      subtitle: "PMI",
       logo_path: "dataai.png",
       certificate_link:
         // "https://drive.google.com/file/d/1LYzFiq0DDYYiDHowG4nbPjgmjCgd3QiV/view?usp=sharing",
@@ -447,8 +447,8 @@ const certifications = {
       color_code: "#000000",
     },
     {
-      title: "Talking To AI: Prompt Engineering For Project Managers",
-      subtitle: "",
+      title: "AI Prompt Engineering For Project Managers",
+      subtitle: "PMI",
       logo_path: "talktoai.jpeg",
       certificate_link:
         // "https://drive.google.com/file/d/12qhxMM2DGp4YVdG9wcpFDNX7r1bjqumx/view?usp=sharing",
@@ -458,7 +458,7 @@ const certifications = {
     },
     {
       title: "CompTIA Network+ ce Certification",
-      subtitle: "",
+      subtitle: "CompTIA",
       logo_path: "net.png",
       certificate_link:
         // "https://drive.google.com/file/d/12f_pCjrOIkx0SMC0mqjnxpMwc9tesQoC/view?usp=sharing",
@@ -468,7 +468,7 @@ const certifications = {
     },
     {
       title: "CompTIA Security+ ce Certification",
-      subtitle: "",
+      subtitle: "CompTIA",
       logo_path: "sec.png",
       certificate_link:
         // "https://drive.google.com/file/d/12f_pCjrOIkx0SMC0mqjnxpMwc9tesQoC/view?usp=sharing",
@@ -478,7 +478,7 @@ const certifications = {
     },
     {
       title: "AWS Certified Cloud Practitioner",
-      subtitle: "- Cory House",
+      subtitle: "AWS",
       logo_path: "cl.jpeg",
       certificate_link:
         // "https://drive.google.com/file/d/15UMAKzJq1g1cIrz-sp1Ve0efg-M-hAq1/view",
@@ -488,7 +488,7 @@ const certifications = {
     },
     {
       title: "Practical Application of Gen AI for Project Managers",
-      subtitle: "",
+      subtitle: "PMI",
       logo_path: "pagen.png",
       certificate_link:
         // "https://drive.google.com/file/d/15mPlLGrjpmkdlf3eyi7B_NLG8Wro5EEg/view",
