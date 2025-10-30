@@ -3,7 +3,6 @@ import "./HobbiesComponent.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { hobbies } from "../../portfolio";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 import HobbiesCard from "./HobbiesCard";
 

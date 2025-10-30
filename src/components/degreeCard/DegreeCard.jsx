@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./DegreeCard.css";
-// import { Fade, Flip } from "react-reveal";
 import { motion } from 'framer-motion';
 
 class DegreeCard extends Component {

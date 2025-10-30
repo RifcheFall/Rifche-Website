@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Issues.css";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 import IssueCard from "../../components/issueCard/IssueCard";
 import issuesData from "../../shared/opensource/issues.json";

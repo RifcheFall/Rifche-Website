@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Educations.css";
 import DegreeCard from "../../components/degreeCard/DegreeCard";
 import { degrees } from "../../portfolio";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 
 class Educations extends Component {

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./CertificationCard.css";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 
 class CertificationCard extends Component {
@@ -22,12 +21,7 @@ class CertificationCard extends Component {
           }}
         >
           <div className="content">
-            <a
-              // href={certificate.certificate_link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {/* <div className="content-overlay"></div> */}
+            <a target="_blank" rel="noopener noreferrer">
               <div
                 className="cert-header"
                 style={{ backgroundColor: "transparent" }}
@@ -38,14 +32,7 @@ class CertificationCard extends Component {
                   alt={certificate.alt_name}
                 />
               </div>
-              <div className="content-details fadeIn-top">
-                <h3
-                  className="content-title"
-                  style={{ color: theme.secondarytext }}
-                >
-                  Certificate
-                </h3>
-              </div>
+              <div className="content-details fadeIn-top"></div>
             </a>
           </div>
           <div className="cert-body">

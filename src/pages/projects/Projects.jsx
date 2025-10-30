@@ -3,7 +3,6 @@ import Header from "../../components/header/Header.jsx";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard.jsx";
 import Button from "../../components/button/Button.jsx";
 import TopButton from "../../components/topButton/TopButton.jsx";
-// import { Fade } from "react-reveal";
 import { motion } from "framer-motion";
 import { projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
@@ -24,12 +23,7 @@ class Projects extends Component {
           >
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* <img
-											src={new URL(`../../assests/images/${projectsHeader["avatar_image_path"]}`, import.meta.url).href}
-											alt=""
-										/> */}
                 <img src="/images/photo_1.jpg" alt="" />
-                {/* <ProjectsImg theme={theme} /> */}
               </div>
               <div className="projects-heading-text-div">
                 <h1

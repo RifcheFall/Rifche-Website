@@ -3,7 +3,6 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting, socialMediaLinks } from "../../portfolio";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 import FeelingProud from "./FeelingProud";
 import photoImg from "../../assests/images/newpf.png";
@@ -51,13 +50,6 @@ export default function Greeting(props) {
               </p>
               <SocialMedia theme={theme} links={socialMediaLinks} />
               <div className="button-greeting-div">
-                {/* <Button
-                  text="⭐ Follow Me On Github"
-                  newTab={true}
-                  href={greeting.portfolio_repository}
-                  theme={theme}
-                  className="portfolio-repo-btn"
-                /> */}
                 <Button
                   text="See My Resume"
                   newTab={true}

@@ -3,7 +3,6 @@ import "./CharityComponent.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { charity, charitySocialMediaLinks } from "../../portfolio";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 
 export default function CharityComponent(props) {

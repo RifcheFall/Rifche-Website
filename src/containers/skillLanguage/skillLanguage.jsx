@@ -1,7 +1,6 @@
 import React from "react";
 import "./skillLanguage.css";
 import { sLanguage } from "../../portfolio";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 
 export default function SkillLanguage(props) {

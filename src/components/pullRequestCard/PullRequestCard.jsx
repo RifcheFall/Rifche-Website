@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./PullRequestCard.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 
 class PullRequestCard extends Component {

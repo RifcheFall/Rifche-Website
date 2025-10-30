@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PullRequestChart from "../../components/pullRequestChart/PullRequestChart";
 import IssueChart from "../../components/issueChart/IssueChart";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 import "./OpensourceCharts.css";
 

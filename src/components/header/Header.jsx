@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Header.css";
-// import { Fade } from "react-reveal";
 import { motion } from "framer-motion";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
@@ -164,21 +163,7 @@ class Header extends Component {
                   CAFALL Charity
                 </NavLink>
               </li>
-              {/* <li>
-                <NavLink
-                  to="/opensource"
-                  // tag={Link}
-                  style={({ isActive }) =>
-    isActive
-      ? { fontWeight: "bold", color: theme.text }
-      : { color: theme.text }
-  }
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
-              </li> */}
+              
               <li>
                 <NavLink
                   to="/contact"

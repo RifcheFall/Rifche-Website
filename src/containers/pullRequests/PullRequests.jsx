@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./PullRequests.css";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 import PullRequestCard from "../../components/pullRequestCard/PullRequestCard";
 import pullRequestsData from "../../shared/opensource/pull_requests.json";

@@ -8,7 +8,6 @@ import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites
 import EducationImg from "./EducationImg";
 import { competitiveSites } from "../../portfolio";
 import "./EducationComponent.css";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 
 class Education extends Component {
@@ -25,11 +24,6 @@ class Education extends Component {
           >
             <div className="heading-div">
               <div className="heading-img-div">
-                {/* <img
-									src={new URL("../../assests/images/education.svg", import.meta.url).href}
-									alt=""
-								/> */}
-                {/* <EducationImg theme={theme} /> */}
                 <img
                   className="education-img"
                   src={new URL(`../../assests/images/washburn.png`, import.meta.url).href}

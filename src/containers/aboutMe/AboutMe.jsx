@@ -3,7 +3,6 @@ import "./AboutMe.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { aboutMe } from "../../portfolio";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 
 export default function AboutMe(props) {

@@ -1,7 +1,6 @@
 import React from "react";
 import "./skillTools.css";
 import { tools } from "../../portfolio";
-// import { Fade } from "react-reveal";
 import { motion } from 'framer-motion';
 
 export default function SkillTools(props) {
