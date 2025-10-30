@@ -18,13 +18,6 @@ export default function AboutMe(props) {
     >
       <div className="about-main" id="aboutMe">
         <div className="aboutMe-main">
-          <div className="aboutMe-image-div">
-            <img
-              className="show-on-desktop"
-              src={new URL(`../../assests/images/stand2.JPG`, import.meta.url).href}
-              alt=""
-            />
-          </div>
           <div className="aboutMe-text-div">
             <h1 className="aboutMe-text">About Me</h1>
             <div className="aboutMe-image-div">
@@ -35,6 +28,26 @@ export default function AboutMe(props) {
               />
             </div>
             <p className="aboutMe-text-content">{aboutMe.content}</p>
+            {aboutMe.gallery && aboutMe.gallery.length > 0 && (
+              <div className="aboutMe-gallery">
+                {aboutMe.gallery.map((item) => (
+                  <div className="aboutMe-gallery-card" key={item.image}>
+                    <img
+                      src={new URL(`../../assests/images/${item.image}`, import.meta.url).href}
+                      alt=""
+                    />
+                    <div className="aboutMe-gallery-caption">{item.title}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+          <div className="aboutMe-image-div">
+            <img
+              className="show-on-desktop"
+              src={new URL(`../../assests/images/stand2.JPG`, import.meta.url).href}
+              alt=""
+            />
           </div>
         </div>
       </div>

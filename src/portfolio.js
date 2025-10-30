@@ -23,6 +23,12 @@ const aboutMe = {
     With the unwavering support of my teammates and classmates, I learned the importance of teamwork and collaboration, values that have remained at the core of my personal and professional journey. 
     My academic and athletic pursuits led me to Cloud County Community College in Kansas, where I majored in Business Administration and played an integral role on the Men's Basketball Team. 
     These formative years were instrumental in honing my leadership skills, fostering my passion for personal growth, and deepening my commitment to excellence both on and off the court.`,
+  gallery: [
+    { image: "usad1.png", title: "First Day in the US  Boston 2012" },
+    { image: "leegame.png", title: "High School Game  Lee Academy" },
+    { image: "cloudgame.png", title: "Junior College Game  Cloud County CC" },
+    { image: "washburngame.png", title: " Washburn University Game " },
+  ],
 };
 
 const socialMediaLinks = [
