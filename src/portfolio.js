@@ -403,7 +403,7 @@ const certifications = {
         // "https://drive.google.com/file/d/1wLzB3oGkyI4svn09Yor2sAeSF3DbPzeU/view?usp=sharing",
         "",
       alt_name: "New Zealand",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
     {
       title: "SAFe Scrum Master 6.0 (Scaled Agile Inc)",
@@ -413,7 +413,7 @@ const certifications = {
         // "https://coursera.org/share/259bcebba35c1ba43934608a5fab9907",
         "",
       alt_name: "Michigan University",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
     {
       title: "Project Management Professional (PMP)",
@@ -423,7 +423,7 @@ const certifications = {
         // "https://coursera.org/share/39d3749b06308a77e0f596129029d4fe",
         "",
       alt_name: "Michigan University",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
 
     {
@@ -434,7 +434,7 @@ const certifications = {
         // "https://drive.google.com/file/d/1qcJipEjDB3YanZor4xHpU_9BC73FuCud/view?usp=sharing",
         "",
       alt_name: "Pluralsight",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
     {
       title: "Data Landscape Of GEN AI For Project Managers (PMI)",
@@ -444,7 +444,7 @@ const certifications = {
         // "https://drive.google.com/file/d/1LYzFiq0DDYYiDHowG4nbPjgmjCgd3QiV/view?usp=sharing",
         "",
       alt_name: "Pluralsight.",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
     {
       title: "AI Prompt Engineering For Project Managers",
@@ -454,7 +454,7 @@ const certifications = {
         // "https://drive.google.com/file/d/12qhxMM2DGp4YVdG9wcpFDNX7r1bjqumx/view?usp=sharing",
         "",
       alt_name: "Pluralsight",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
     {
       title: "CompTIA Network+ ce Certification",
@@ -464,7 +464,7 @@ const certifications = {
         // "https://drive.google.com/file/d/12f_pCjrOIkx0SMC0mqjnxpMwc9tesQoC/view?usp=sharing",
         "",
       alt_name: "Pluralsight.",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
     {
       title: "CompTIA Security+ ce Certification",
@@ -474,7 +474,7 @@ const certifications = {
         // "https://drive.google.com/file/d/12f_pCjrOIkx0SMC0mqjnxpMwc9tesQoC/view?usp=sharing",
         "",
       alt_name: "Pluralsight.",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
     {
       title: "AWS Certified Cloud Practitioner",
@@ -484,7 +484,7 @@ const certifications = {
         // "https://drive.google.com/file/d/15UMAKzJq1g1cIrz-sp1Ve0efg-M-hAq1/view",
         "",
       alt_name: "Pluralsight.",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
     },
     {
       title: "Practical Application of Gen AI for Project Managers",
@@ -494,7 +494,16 @@ const certifications = {
         // "https://drive.google.com/file/d/15mPlLGrjpmkdlf3eyi7B_NLG8Wro5EEg/view",
         "",
       alt_name: "Pluralsight.",
-      color_code: "#000000",
+      color_code: "#f7f7f8",
+    },
+    {
+      title: "Linux Essentials",
+      subtitle: "Linux Professional Institute (LPI)",
+      logo_path: "lpi_linux_essentials.png",
+      certificate_link:
+        "",
+      alt_name: "Linux Essentials",
+      color_code: "#f7f7f8",
     },
   ],
 };

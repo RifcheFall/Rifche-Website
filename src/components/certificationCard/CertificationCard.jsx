@@ -18,6 +18,7 @@ class CertificationCard extends Component {
           style={{
             border: `1px solid ${theme.shadow}`,
             boxShadow: `5px 5px 5px ${theme.shadow}`,
+            backgroundColor: certificate.color_code || "#f7f7f8",
           }}
         >
           <div className="content">
