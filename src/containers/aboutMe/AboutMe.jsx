@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AboutMe.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -7,8 +7,18 @@ import { motion } from 'framer-motion';
 
 export default function AboutMe(props) {
   const theme = props.theme;
+  const [selectedImage, setSelectedImage] = useState(null);
   console.log(props);
   console.log(theme.text);
+
+  const openLightbox = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -34,6 +44,7 @@ export default function AboutMe(props) {
                     <img
                       src={new URL(`../../assests/images/${item.image}`, import.meta.url).href}
                       alt=""
+                      onClick={() => openLightbox(new URL(`../../assests/images/${item.image}`, import.meta.url).href)}
                     />
                     <div className="aboutMe-gallery-caption">{item.title}</div>
                   </div>
@@ -50,6 +61,18 @@ export default function AboutMe(props) {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div className="lightbox-overlay" onClick={closeLightbox}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={closeLightbox}>
+              ×
+            </button>
+            <img src={selectedImage} alt="Full size" />
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 }
