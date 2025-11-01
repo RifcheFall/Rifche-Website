@@ -79,46 +79,55 @@
 
 .aboutMe-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 260px); /* fixed card width */
-  justify-content: center; /* center the grid when wrapping */
-  gap: 20px;
-  margin-top: 20px;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for nice 2x2 grid */
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aboutMe-gallery-card {
-  width: 260px; /* fixed card width */
+  width: 100%; /* full width of grid cell */
   background: rgba(0,0,0,0.02);
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutMe-gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .aboutMe-gallery-card img {
-  width: 260px; /* fixed image width to match card */
-  height: 200px; /* fixed box for image */
-  object-fit: contain; /* do not crop or distort */
-  background-color: rgba(0,0,0,0.02); /* subtle letterbox background */
+  width: 100%; /* full width of card */
+  height: 300px; /* consistent height for all images */
+  object-fit: contain; /* show full image without cropping */
+  background-color: rgba(0,0,0,0.03);
   display: block;
+  transition: transform 0.3s ease;
 }
 
-/* Make the last ("Today") photo slightly smaller */
-.aboutMe-gallery-card:last-child img {
-  height: 180px; /* keep "Today" (if re-added) a bit smaller */
+.aboutMe-gallery-card:hover img {
+  transform: scale(1.05);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   .aboutMe-gallery {
-    grid-template-columns: repeat(auto-fill, 220px);
-  }
-  .aboutMe-gallery-card {
-    width: 220px;
+    grid-template-columns: 1fr; /* single column on smaller screens */
+    gap: 20px;
+    max-width: 600px;
   }
   .aboutMe-gallery-card img {
-    width: 220px;
-    height: 180px;
+    height: 300px; /* keep same height as desktop */
   }
+}
 
+@media (max-width: 600px) {
   .aboutMe-image-div > * {
     width: 300px; /* reduce main image on small screens */
   }
@@ -187,10 +196,6 @@
 
   .aboutMe-main {
     display: block;
-  }
-
-  .aboutMe-gallery {
-    grid-template-columns: 1fr 1fr;
   }
 
   .button-aboutMe-div {
