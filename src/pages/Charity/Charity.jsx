@@ -1,20 +1,8 @@
-import React, { Component } from "react";
-import Header from "../../components/header/Header";
+import React from "react";
 import CharityComponent from "../../containers/Charity/CharityComponent";
-import Skills from "../../containers/skills/Skills";
-import TopButton from "../../components/topButton/TopButton";
 
-class Charity extends Component {
-  render() {
-    console.log(this.props.theme);
-    return (
-      <div>
-        <Header theme={this.props.theme} />
-        <CharityComponent theme={this.props.theme} />
-        <TopButton theme={this.props.theme} />
-      </div>
-    );
-  }
-}
+const Charity = ({ theme }) => {
+  return <CharityComponent theme={theme} />;
+};
 
 export default Charity;

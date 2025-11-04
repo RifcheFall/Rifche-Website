@@ -60,6 +60,17 @@ export default function CharityComponent(props) {
         <div className="button-charity-div">
           <SocialMedia theme={theme} links={charitySocialMediaLinks} />
         </div>
+        
+        {/* Visit Website Button */}
+        <div className="charity-website-button">
+          <Button
+            text="Visit Our Website"
+            newTab={true}
+            href={charity.website || "/charity-website/index.html"}
+            theme={theme}
+            className="portfolio-repo-btn"
+          />
+        </div>
       </div>
 
       {/* Lightbox Modal */}
