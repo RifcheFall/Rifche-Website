@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CharityComponent.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -7,8 +7,18 @@ import { motion } from 'framer-motion';
 
 export default function CharityComponent(props) {
   const theme = props.theme;
+  const [selectedImage, setSelectedImage] = useState(null);
   console.log(props);
   console.log(theme.text);
+
+  const openLightbox = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -25,33 +35,44 @@ export default function CharityComponent(props) {
           />
         </div>
         <p className="charity-description">{charity.description}</p>
+        
+        {/* Charity Gallery */}
+        {charity.gallery && charity.gallery.length > 0 && (
+          <div className="charity-gallery">
+            {charity.gallery.map((item, index) => (
+              <div className="charity-gallery-card" key={`${item.image}-${index}`}>
+                <img
+                  src={`/images/${item.image}`}
+                  alt=""
+                  onClick={() => openLightbox(`/images/${item.image}`)}
+                />
+                <div className="charity-gallery-caption">
+                  <div className="charity-caption-title">{item.title}</div>
+                  {item.location && (
+                    <div className="charity-caption-location">📍 {item.location}</div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
         <div className="button-charity-div">
           <SocialMedia theme={theme} links={charitySocialMediaLinks} />
-          {/* <Button
-            text="Instagram"
-            newTab={true}
-            // href={greeting.portfolio_repository}
-            theme={theme}
-            className="portfolio-repo-btn"
-          />
-          <Button
-            text="TikTok"
-            newTab={true}
-            // href={greeting.resumeLink}
-            theme={theme}
-            className="portfolio-repo-btn"
-            style={{ marginLeft: "1rem" }}
-          />
-          <Button
-            text="TikTok"
-            newTab={true}
-            // href={greeting.resumeLink}
-            theme={theme}
-            className="portfolio-repo-btn"
-            style={{ marginLeft: "1rem" }}
-          /> */}
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div className="lightbox-overlay" onClick={closeLightbox}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={closeLightbox}>
+              ×
+            </button>
+            <img src={selectedImage} alt="Full size" />
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 }

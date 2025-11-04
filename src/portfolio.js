@@ -338,7 +338,21 @@ const hobbies = {
 const charity = {
   logo: "",
   description:
-    "In The Heart Of Senegal, Where Warm Sands Blend With The Youthful Love For Sports, A Young Boy Named Cherif Alwaly Fall Grew Up Dreaming Of Basketball. Cherif Also Witnessed The Harsh Realities Faced By Many: The Struggle To Afford Even The Most Necessities, Like Shoes To Play The Game They Loved. These Scenes Left An Unforgettable Marks On Cherif's Soul, Igniting A Fire Within Him To Make A Difference. In 2014, Cherif Turned His Passion Into Action, Founding CAFAll Charity A Source Of Hope, Dedicated To Uplifting Communities Across Senegal And Beyond. Born From A Desire To Give Back To The Country That Shaped Him, CAFAll Charity Stands As A Testament To Cherif's Commitments To Making A Positive Impact. As Cherif's Journey Carried Him From The Streets Of Senegal To The Basketball Courts Of The United States, His Heart Remained Attached To His Roots. With Every Game Won And Every Hoop Scored, He Felt A Deep Sense Of Responsibility To Those Who Had Supported Him Along The Way. Through CAFAll Charity, Cherif Channels This Gratitude Into Tangible Change, Striving To Create A World Where Every Child Has The Opportunity To Thrive. But CAFAll Charity Is More Than Just A Philanthropic Endeavor It's A Labor Of Love, Fueled By The Collective Spirit Of Those Who Believe In Cherif's Vision. Together, They Work Tirelessly To Break Down Barriers And Empower The Next Generation Of Leaders, Athletes, And Changemakers.",
+    "In the heart of Senegal, where warm sands blend with the youthful love for sports, a young boy named Cherif Alwaly Fall grew up dreaming of basketball. Cherif also witnessed the harsh realities faced by many: the struggle to afford even the most necessities, like shoes to play the game they loved. These scenes left an unforgettable mark on Cherif's soul, igniting a fire within him to make a difference. In 2014, Cherif turned his passion into action, founding CAFALL Charity - a source of hope, dedicated to uplifting communities across Senegal and beyond. Born from a desire to give back to the country that shaped him, CAFALL Charity stands as a testament to Cherif's commitment to making a positive impact. As Cherif's journey carried him from the streets of Senegal to the basketball courts of the United States, his heart remained attached to his roots. With every game won and every hoop scored, he felt a deep sense of responsibility to those who had supported him along the way. Through CAFALL Charity, Cherif channels this gratitude into tangible change, striving to create a world where every child has the opportunity to thrive. But CAFALL Charity is more than just a philanthropic endeavor - it's a labor of love, fueled by the collective spirit of those who believe in Cherif's vision. Together, they work tirelessly to break down barriers and empower the next generation of leaders, athletes, and changemakers.",
+  gallery: [
+    { image: "ca1.png", title: "CAFALL Charity Shoes Giveaway", location: "Diamniadio, Senegal" },
+    { image: "ca2.png", title: "CAFALL Charity Shoes Giveaway", location: "Kebemer, Senegal" },
+  { image: "ca3.png", title: "CAFALL Charity Soccer Jersey Giveaway", location: "Diamniadio, Senegal" },
+    { image: "ca4.png", title: "Basketball Donation", location: "Pout, Senegal" },
+    { image: "ca5.png", title: "School Supplies Giveaway", location: "Diamniadio, Senegal" },
+    { image: "ca6.png", title: "Shoes Collection", location: "Topeka, Kansas" },
+    { image: "ca7.png", title: "Shoes Giveaway", location: "Pout, Senegal" },
+    { image: "ca8.png", title: "Shoes Giveaway", location: "Sebi-Ponty, Senegal" },
+    { image: "ca9.png", title: "School Supplies Giveaway", location: "Sebikotane, Senegal" },
+    { image: "ca10.png", title: "Shoes Giveaway", location: "Keur Moussa, Senegal" },
+    { image: "ca11.png", title: "Shoes Giveaway", location: "Sebikotane, Senegal" },
+    { image: "ca12.png", title: "Shoes Giveaway", location: "Diamniadio, Senegal" },
+  ],
 };
 
 // Education Page
