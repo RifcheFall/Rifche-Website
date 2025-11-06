@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import BlogsImg from "./BlogsImg";
-import AddressImg from "./AddressImg";
 import { motion } from 'framer-motion';
 import "./ContactComponent.css";
 import {
@@ -15,9 +12,6 @@ import {
 } from "../../portfolio.js";
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
-const addressSection = contactPageData.addressSection;
-const phoneSection = contactPageData.phoneSection;
 
 class Contact extends Component {
   render() {
@@ -35,7 +29,7 @@ class Contact extends Component {
               <div className="contact-heading-img-div">
                 <img
                   src={new URL(`../../assests/images/${ContactData["profile_image_path"]}`, import.meta.url).href}
-                  alt=""
+                  alt="Contact"
                 />
               </div>
               <div className="contact-heading-text-div">
@@ -63,7 +57,6 @@ class Contact extends Component {
               </div>
             </div>
           </motion.div>
-          
         </div>
         <TopButton theme={this.props.theme} />
       </div>

@@ -30,8 +30,11 @@ export default function CharityComponent(props) {
         <div className="charity-image-div">
           <img
             className=""
-            src={new URL(`../../assests/images/logo.png`, import.meta.url).href}
-            alt=""
+            src="/charity-website/images/logo.png"
+            alt="CAFALL Charity Logo"
+            onError={(e) => {
+              e.target.src = '/charity-website/images/placeholder.jpg';
+            }}
           />
         </div>
         <p className="charity-description">{charity.description}</p>
@@ -42,9 +45,12 @@ export default function CharityComponent(props) {
             {charity.gallery.map((item, index) => (
               <div className="charity-gallery-card" key={`${item.image}-${index}`}>
                 <img
-                  src={`/images/${item.image}`}
-                  alt=""
-                  onClick={() => openLightbox(`/images/${item.image}`)}
+                  src={`/charity-website/images/${item.image}`}
+                  alt={item.title || "Charity image"}
+                  onClick={() => openLightbox(`/charity-website/images/${item.image}`)}
+                  onError={(e) => {
+                    e.target.src = '/charity-website/images/placeholder.jpg';
+                  }}
                 />
                 <div className="charity-gallery-caption">
                   <div className="charity-caption-title">{item.title}</div>

@@ -5,11 +5,11 @@ import Skill from "../pages/skill/skillTree";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
-import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
 import About from "../pages/about/AboutComponent";
 import Hobbies from "../pages/Hobbies/Hobbies";
 import Charity from "../pages/Charity/Charity";
+import Contact from "../pages/contact/ContactComponent";
 
 export default class Main extends Component {
   render() {

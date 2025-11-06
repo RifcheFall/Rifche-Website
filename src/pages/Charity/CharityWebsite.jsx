@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CharityNavbar from '../../components/charityWebsite/CharityNavbar';
-import EventsGallery from '../../components/charityWebsite/EventsGallery';
 import { charity } from '../../portfolio';
 
 const CharityWebsite = () => {
@@ -52,9 +51,12 @@ const CharityWebsite = () => {
                   About Us
                 </h1>
                 <img
-                  src="/images/logo.png"
+                  src="/charity-website/images/logo.png"
                   alt="CAFALL Charity Logo"
                   className="mx-auto w-48 h-48 object-contain mb-8"
+                  onError={(e) => {
+                    e.target.src = '/charity-website/images/placeholder.jpg';
+                  }}
                 />
               </div>
 
@@ -209,11 +211,6 @@ const CharityWebsite = () => {
               </p>
             </motion.div>
           </SectionWrapper>
-        )}
-
-        {/* Events Gallery Section */}
-        {activeSection === 'events-gallery' && (
-          <EventsGallery key="events-gallery" />
         )}
 
         {/* Contact Us Section */}

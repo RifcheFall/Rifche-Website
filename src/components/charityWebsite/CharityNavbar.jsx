@@ -12,7 +12,6 @@ const CharityNavbar = ({ activeSection, onSectionChange }) => {
     { id: 'operation-team', label: 'Operation Team' },
     { id: 'coaches', label: 'Coaches' },
     { id: 'content-creators', label: 'Content Creators' },
-    { id: 'events-gallery', label: 'Our Events Gallery' },
     { id: 'contact-us', label: 'Contact Us' },
   ];
 
