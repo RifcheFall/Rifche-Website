@@ -26,6 +26,14 @@ export default function CharityComponent(props) {
       transition={{ duration: 2 }}
     >
       <div className="charity-main" id="charity">
+        <div className="charity-back-button">
+          <Button
+            text="← Back to Portfolio"
+            href="/"
+            theme={theme}
+            className="portfolio-repo-btn"
+          />
+        </div>
         <h1 className="charity-title">CAFALL Charity</h1>
         <div className="charity-image-div">
           <img

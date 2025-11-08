@@ -3,12 +3,18 @@
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 4rem;
-}
-
-.charity-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.charity-back-button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto 20px auto;
+  padding: 0 20px;
 }
 
 .charity-main > * {
@@ -255,6 +261,11 @@
 @media (max-width: 768px) {
   .charity-gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on small tablets */
+  }
+
+  .charity-back-button {
+    justify-content: center;
+    padding: 0 10px;
   }
 
   .button-charity-div {

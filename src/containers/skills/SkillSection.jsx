@@ -7,6 +7,7 @@ import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
 import AndroidImg from "./AndroidImg";
 import DesignImg from "./DesignImg";
+import awsImg from "../../assests/images/aws.png";
 
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
@@ -33,7 +34,7 @@ class SkillSection extends Component {
                 viewport={{ once: true, amount: 0.2 }}
               >
                 <div className="skills-image-div">
-                  <img src="/images/fit.jpg" alt="" />
+                  <img src={awsImg} alt="" />
                 </div>
               </motion.div>
 

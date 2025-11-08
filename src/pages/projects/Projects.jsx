@@ -8,6 +8,7 @@ import { projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg.jsx";
+import proImg from "../../assests/images/pro.png";
 
 class Projects extends Component {
   render() {
@@ -23,7 +24,7 @@ class Projects extends Component {
           >
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                <img src="/images/photo_1.jpg" alt="" />
+                <img src={proImg} alt="" />
               </div>
               <div className="projects-heading-text-div">
                 <h1
