@@ -28,7 +28,7 @@ section {
 }
 
 /* Make visible sections flex to push footer down */
-section:not([style*="display: none"]) {
+section:not([style*="display: block"]) {
     flex: 1 0 auto;
 }
 
@@ -40,7 +40,7 @@ section[style*="display: block"] {
 
 /* Override for tab content sections - they are controlled by JavaScript */
 section.tab-content {
-    display: none;
+    display: block;
     visibility: hidden;
     padding-top: 0;
     min-height: auto;
@@ -2154,6 +2154,232 @@ footer p {
 
     footer.footer-fixed p {
         font-size: 0.8125rem; /* 13px */
+    }
+}
+
+
+/* Events Photos Standalone Page */
+.events-photos-page {
+    background-color: #f9fafb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.events-photos-page main {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.events-photos-hero {
+    text-align: center;
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.25));
+}
+
+.events-photos-hero .hero-content {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.events-photos-hero h1 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.events-photos-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #4b5563;
+}
+
+.events-cta-button {
+    display: inline-block;
+    padding: 0.9rem 2.4rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.events-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.25);
+}
+
+.events-albums-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.events-album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.75rem;
+}
+
+.events-album-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeIn 0.6s ease forwards;
+    opacity: 0;
+}
+
+.events-album-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 55px rgba(15, 23, 42, 0.12);
+}
+
+.events-album-image {
+    height: 220px;
+    overflow: hidden;
+    background-color: #f3f4f6;
+}
+
+.events-album-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.events-album-card:hover .events-album-image img {
+    transform: scale(1.05);
+}
+
+.events-album-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.events-album-body h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.album-location {
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+.album-description {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.album-photo-count {
+    align-self: flex-start;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    background: rgba(102, 126, 234, 0.12);
+    color: #4c51bf;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.events-album-view {
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 18px;
+    background-color: #ffffff;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.events-album-view[hidden] {
+    display: none !important;
+}
+
+.back-to-albums-btn {
+    border: none;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-to-albums-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.25);
+}
+
+.album-view-header {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.album-view-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.album-view-header p {
+    margin: 0.25rem 0;
+    color: #4b5563;
+}
+
+.events-album-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+
+.events-album-photo-card {
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+    background-color: #f3f4f6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.events-album-photo-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.events-album-photo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 32px rgba(15, 23, 42, 0.12);
+}
+
+.loading-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: 1.1rem;
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .events-photos-hero {
+        padding: 100px 16px 50px;
+    }
+
+    .events-album-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .events-album-photos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
 }
 

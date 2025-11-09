@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAFALL Charity | Events Photos</title>
+    <link rel="stylesheet" href="/charity-website/css/Caflall.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="events-photos-page">
+    <header class="header">
+        <nav class="navbar">
+            <a href="/charity-website/index.html#about-us" class="logo">CAFALL CHARITY</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/charity-website/index.html#about-us">About Us</a></li>
+                <li><a href="/charity-website/index.html#our-vision">Our Vision</a></li>
+                <li><a href="/charity-website/index.html#our-goal">Our Goal</a></li>
+                <li><a href="/charity-website/index.html#our-impact">Our Impacts</a></li>
+                <li><a href="/charity-website/index.html#meet-the-team">Meet the Team</a></li>
+                <li><a class="active-nav" href="/charity-website/events-photos.html">Events Photos</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="events-photos-hero">
+            <div class="hero-content">
+                <h1>Click here to see our Events Photos</h1>
+                <p>Celebrate the unforgettable moments and milestones of CAFALL Charity.</p>
+                <a href="#albums" class="events-cta-button">Explore Our Albums</a>
+            </div>
+        </section>
+
+        <section id="albums" class="events-albums-section">
+            <div id="albums-grid" class="events-album-grid">
+                <div class="loading-message">Loading albums...</div>
+            </div>
+
+            <div id="album-view" class="events-album-view" hidden>
+                <button class="back-to-albums-btn" type="button" onclick="showAlbumsGrid()">
+                    ← Back to Albums
+                </button>
+                <div class="album-view-header">
+                    <h2 id="album-view-title"></h2>
+                    <p id="album-view-location"></p>
+                    <p id="album-view-description"></p>
+                </div>
+                <div id="album-photos-grid" class="events-album-photos-grid gallery"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-fixed">
+        <div class="footer-container">
+            <p>&copy;2024 CAFALL CHARITY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        const eventsAlbums = [
+          {
+            folder: 'CEM Basket Club',
+            name: 'CEM Basket Club',
+            location: 'Sebikotane, Senegal',
+            description: 'Basketball shoes and equipment donation to CEM Basket Club, supporting young athletes in their journey.',
+            images: ['cemsebi1.png', 'cemsebi2.png', 'cemsebi3.png', 'cemsebi4.png', 'cemsebi5.png']
+          },
+          {
+            folder: 'Ecole elementary Diamniadio',
+            name: 'Elementary School Diamniadio',
+            location: 'Diamniadio, Senegal',
+            description: 'School supplies and educational support for students at Diamniadio Elementary School.',
+            images: ['eed1.jpg', 'eed2.jpg', 'eed3.jpg', 'eed4.jpg', 'eed5.jpg', 'eed6.jpg', 'eed7.jpg', 'eed8.jpg', 'eed9.jpg', 'eed10.jpg', 'eed11.jpg', 'eed12.jpg', 'eed13.jpg', 'eed14.jpg', 'eed15jpg.jpg']
+          },
+          {
+            folder: 'Ecole Sebi Fass',
+            name: 'Sebi Fass School',
+            location: 'Sebikotane, Senegal',
+            description: 'Educational resources and school supplies distribution at Sebi Fass School.',
+            images: ['esf1.jpg', 'esf2.jpg', 'esf3.jpg', 'esf4.jpg', 'esf5.jpg', 'esf6.jpg']
+          },
+          {
+            folder: 'Football donation Diamniadio',
+            name: 'Football Equipment Donation',
+            location: 'Diamniadio, Senegal',
+            description: 'Football equipment and gear donation to support local teams and young players.',
+            images: ['fdd1.jpg', 'fdd2.jpg', 'fdd3.jpg', 'fdd4.jpg', 'fdd5.jpg', 'fdd6.jpg', 'fdd7.jpg', 'fdd8.jpg', 'fdd9.jpg', 'fdd10.jpg', 'fdd11.jpg', 'fdd12.jpg', 'fdd13.jpg', 'fdd14.jpg', 'fdd15.jpg', 'fdd16.jpg']
+          },
+          {
+            folder: 'Foyer Sebi',
+            name: 'Foyer Sebi Community Center',
+            location: 'Sebikotane, Senegal',
+            description: 'Community outreach and support activities at Foyer Sebi community center.',
+            images: ['fs1.jpg', 'fs2.jpg', 'fs3jpg.JPG', 'fs4.jpg', 'fs5.jpg', 'fs6.jpg', 'fs7.jpg']
+          },
+          {
+            folder: 'Sofadji Basket Club',
+            name: 'Sofadji Basket Club',
+            location: 'Senegal',
+            description: 'Basketball equipment and support for Sofadji Basket Club players.',
+            images: ['Sof1.jpg', 'sof2.jpg', 'sof3.jpg']
+          }
+        ];
+
+        function initializeEventsPhotos() {
+          const albumsGrid = document.getElementById('albums-grid');
+          if (!albumsGrid) {
+            console.error('Albums grid element not found');
+            return;
+          }
+
+          albumsGrid.innerHTML = '';
+
+          eventsAlbums.forEach((album, index) => {
+            const previewImage = album.images[0];
+            const albumCard = document.createElement('article');
+            albumCard.className = 'events-album-card';
+            albumCard.style.animationDelay = `${index * 0.08}s`;
+            albumCard.addEventListener('click', () => showAlbumView(album));
+
+            const imagePath = `/charity-website/images/Events/${album.folder}/${previewImage}`;
+
+            albumCard.innerHTML = `
+              <div class="events-album-image">
+                <img src="${imagePath}" alt="${album.name}" onerror="this.src='/charity-website/images/placeholder.jpg'" />
+              </div>
+              <div class="events-album-body">
+                <h3>${album.name}</h3>
+                <p class="album-location">📍 ${album.location}</p>
+                <p class="album-description">${album.description}</p>
+                <span class="album-photo-count">${album.images.length} photos</span>
+              </div>
+            `;
+
+            albumsGrid.appendChild(albumCard);
+          });
+
+          if (typeof baguetteBox !== 'undefined') {
+            baguetteBox.run('.gallery');
+          }
+        }
+
+        function showAlbumView(album) {
+          const albumsGrid = document.getElementById('albums-grid');
+          const albumView = document.getElementById('album-view');
+          const albumPhotosGrid = document.getElementById('album-photos-grid');
+
+          if (!albumsGrid || !albumView || !albumPhotosGrid) return;
+
+          albumsGrid.hidden = true;
+          albumView.hidden = false;
+
+          document.getElementById('album-view-title').textContent = album.name;
+          document.getElementById('album-view-location').textContent = `📍 ${album.location}`;
+          document.getElementById('album-view-description').textContent = album.description;
+
+          albumPhotosGrid.innerHTML = '';
+
+          album.images.forEach(image => {
+            const imagePath = `/charity-website/images/Events/${album.folder}/${image}`;
+            const link = document.createElement('a');
+            link.href = imagePath;
+            link.dataset.caption = `${album.name} - ${album.location}`;
+            link.className = 'events-album-photo-card';
+            link.innerHTML = `<img src="${imagePath}" alt="${album.name}" onerror="this.src='/charity-website/images/placeholder.jpg'" />`;
+            albumPhotosGrid.appendChild(link);
+          });
+
+          if (typeof baguetteBox !== 'undefined') {
+            baguetteBox.run('.gallery');
+          }
+
+          window.scrollTo({ top: albumView.offsetTop - 80, behavior: 'smooth' });
+        }
+
+        function showAlbumsGrid() {
+          const albumsGrid = document.getElementById('albums-grid');
+          const albumView = document.getElementById('album-view');
+          if (!albumsGrid || !albumView) return;
+
+          albumView.hidden = true;
+          albumsGrid.hidden = false;
+          window.scrollTo({ top: albumsGrid.offsetTop - 80, behavior: 'smooth' });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          initializeEventsPhotos();
+        });
+    </script>
+</body>
+</html>
