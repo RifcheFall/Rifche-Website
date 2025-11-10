@@ -71,6 +71,8 @@
             navLinks.classList.toggle('active');
         });
 
+        const PLACEHOLDER_IMAGE = '/charity-website/images/placeholder.png';
+
         const eventsAlbums = [
           {
             folder: 'CEM Basket Club',
@@ -116,6 +118,22 @@
           }
         ];
 
+        function buildImagePath(folder, image) {
+          if (!folder || !image) return PLACEHOLDER_IMAGE;
+          const encodedFolder = folder
+            .split('/')
+            .map((segment) => encodeURIComponent(segment))
+            .join('/');
+          const encodedImage = encodeURIComponent(image);
+          return `/charity-website/images/Events/${encodedFolder}/${encodedImage}`;
+        }
+
+        function handleImageError(img) {
+          if (!img || img.src.endsWith('placeholder.png')) return;
+          img.onerror = null;
+          img.src = PLACEHOLDER_IMAGE;
+        }
+
         function initializeEventsPhotos() {
           const albumsGrid = document.getElementById('albums-grid');
           if (!albumsGrid) {
@@ -132,11 +150,11 @@
             albumCard.style.animationDelay = `${index * 0.08}s`;
             albumCard.addEventListener('click', () => showAlbumView(album));
 
-            const imagePath = `/charity-website/images/Events/${album.folder}/${previewImage}`;
+            const imagePath = buildImagePath(album.folder, previewImage);
 
             albumCard.innerHTML = `
               <div class="events-album-image">
-                <img src="${imagePath}" alt="${album.name}" onerror="this.src='/charity-website/images/placeholder.jpg'" />
+                <img src="${imagePath}" alt="${album.name}" onerror="handleImageError(this)" />
               </div>
               <div class="events-album-body">
                 <h3>${album.name}</h3>
@@ -171,12 +189,12 @@
           albumPhotosGrid.innerHTML = '';
 
           album.images.forEach(image => {
-            const imagePath = `/charity-website/images/Events/${album.folder}/${image}`;
+            const imagePath = buildImagePath(album.folder, image);
             const link = document.createElement('a');
             link.href = imagePath;
             link.dataset.caption = `${album.name} - ${album.location}`;
             link.className = 'events-album-photo-card';
-            link.innerHTML = `<img src="${imagePath}" alt="${album.name}" onerror="this.src='/charity-website/images/placeholder.jpg'" />`;
+            link.innerHTML = `<img src="${imagePath}" alt="${album.name}" onerror="handleImageError(this)" />`;
             albumPhotosGrid.appendChild(link);
           });
 
@@ -197,9 +215,13 @@
           window.scrollTo({ top: albumsGrid.offsetTop - 80, behavior: 'smooth' });
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initializeEventsPhotos);
+        } else {
           initializeEventsPhotos();
-        });
+        }
     </script>
 </body>
 </html>
+
+
