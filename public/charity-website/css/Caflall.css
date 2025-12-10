@@ -23,7 +23,7 @@ section {
     display: block;
     animation: fadeIn 0.5s ease-in-out;
     padding-top: 100px; /* Space for fixed navbar */
-    min-height: calc(100vh - 100px);
+    /* min-height: calc(100vh - 100px); */
     flex: 1 0 auto;
 }
 
@@ -2170,43 +2170,19 @@ footer p {
     padding-bottom: 80px;
 }
 
-.events-photos-hero {
+.events-photos-intro {
     text-align: center;
-    padding: 120px 20px 60px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.25));
+    padding: 80px 20px 32px;
+    background: linear-gradient(135deg, rgba(234, 227, 25, 0.12), rgba(187, 190, 22, 0.2));
 }
 
-.events-photos-hero .hero-content {
-    max-width: 780px;
+.events-photos-intro p {
     margin: 0 auto;
-}
-
-.events-photos-hero h1 {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.events-photos-hero p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: #4b5563;
-}
-
-.events-cta-button {
-    display: inline-block;
-    padding: 0.9rem 2.4rem;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.events-cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.25);
+    max-width: 720px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #374151;
+    letter-spacing: 0.01em;
 }
 
 .events-albums-section {

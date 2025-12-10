@@ -21,7 +21,7 @@
                 <li><a href="#our-goal">Our Goal</a></li>
                 <li><a href="#our-impact">Our Impacts</a></li>
                 <li><a href="#meet-the-team">Meet the Team</a></li>
-                <li><a href="#events-photos">Events Photos</a></li>
+                <li><a href="/charity-website/events-photos.html">Events Photos</a></li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -674,21 +674,29 @@
         // Handle navigation link clicks
         document.querySelectorAll('.nav-links a, .logo').forEach(link => {
           link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            
+            const targetHref = this.getAttribute('href') || '';
+            const isHashLink = targetHref.startsWith('#');
+
             // Close mobile menu
             menuToggle.classList.remove('active');
             navLinks.classList.remove('active');
-            
+
+            if (!isHashLink) {
+              // Allow normal navigation for external / full links
+              window.location.href = targetHref;
+              return;
+            }
+
+            e.preventDefault();
+
             // If logo is clicked, show about-us (home)
-            if (targetId === '#home' || this.classList.contains('logo')) {
+            if (targetHref === '#home' || this.classList.contains('logo')) {
               showSection('#about-us');
             } else {
               // Show the selected section
-              showSection(targetId);
+              showSection(targetHref);
             }
-            
+
             // Update active nav link styling (optional)
             document.querySelectorAll('.nav-links a').forEach(navLink => {
               navLink.classList.remove('active-nav');
