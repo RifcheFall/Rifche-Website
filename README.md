@@ -1,12 +1,70 @@
-# React + Vite
+# Cherif Fall - Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React and Vite, featuring dark/light theme support and multiple sections showcasing projects, experience, education, and more.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Dark/Light Theme Toggle** - Switch between themes with a beautiful toggle
+- 📱 **Responsive Design** - Works seamlessly on all devices
+- 🚀 **Fast Performance** - Built with Vite for lightning-fast development and builds
+- 🎯 **Multiple Sections** - Home, About, Skills, Experience, Education, Projects, Hobbies, Charity, Open Source, and Contact
+- 🎭 **Styled Components** - Modern styling with styled-components
+- 🏀 **CAFALL Charity** - Integrated charity website section
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18** - UI library
+- **Vite** - Build tool and dev server
+- **React Router** - Client-side routing
+- **Styled Components** - CSS-in-JS styling
+- **Framer Motion** - Animations
+- **Chart.js** - Data visualization
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd Rifche-Website
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── containers/     # Page containers and sections
+├── pages/         # Route pages
+├── assests/       # Images, fonts, and other assets
+└── shared/        # Shared data and utilities
+```
+
+## License
+
+This project is private and personal.

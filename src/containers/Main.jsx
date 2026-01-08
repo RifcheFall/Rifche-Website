@@ -14,7 +14,6 @@ import Contact from "../pages/contact/ContactComponent";
 export default class Main extends Component {
   render() {
     const theme = this.props.theme;
-    console.log(theme);
 
     return (
       <div>
