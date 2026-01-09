@@ -37,7 +37,7 @@
 
 .greeting-text {
   margin-top: 80px;
-  font-size: 70px;
+  font-size: 72px;
   line-height: 1.1;
   font-family: "Google Sans Bold";
 }
@@ -70,9 +70,9 @@
 }
 
 .greeting-image-div > * {
-  width: 360px; /* fixed width to avoid stretching/shrinking */
+  width: 365px; /* fixed width to avoid stretching/shrinking */
   height: auto; /* preserve aspect ratio */
-  border-radius: 24px;
+  border-radius: 26px;
 }
 
 .show-on-mobile {
